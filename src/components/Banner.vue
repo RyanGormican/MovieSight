@@ -1,5 +1,5 @@
 <script setup>
-import getImage from "../lib/getImage"
+import getImage from '../lib/getImage';
 import { RouterLink } from 'vue-router';
 import { Icon } from '@iconify/vue';
 const { banner } = defineProps(["banner"])
