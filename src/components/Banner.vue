@@ -21,7 +21,7 @@ const image = getImage(background)
 <div
 class="w-screen h-screen"
 :style="{
-	backgroundImage: 'url'(' + getImage(background)+ ')',
+	backgroundImage: 'url(' + getImage(background)+ ')',
 	backgroundPosition: 'center center'
 }">
 <div class= "text-white p-10 flex flex-col justify-center w-full h-full bg-gradient-to-r from-black to-ransparent">
