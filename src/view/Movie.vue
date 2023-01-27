@@ -16,8 +16,12 @@ backdrop_path: background,
 poster_path: poster,
 release_date,
 vote_average: vote,
+popularity,
+runtime,
 original_language: language
 } = movie.value
+
+
 </script> 
 <template>
 <div class="h-screen w-screen grayscale-0"
@@ -41,8 +45,23 @@ class="w-[400px] mx-auto rounded-lg"
 </div>
 <div class="flex items-center gap-2">
 <Icon icon="ic:round-star" />
-<span>{{ vote }} </span>
+<span>{{ vote }} / 10 </span>
 </div>
+
+<div class="flex items-center gap-2">
+<Icon icon="ion:people" />
+<span>{{ popularity }} </span>
+</div>
+
+<div class="flex items-center gap-2">
+<Icon icon="ion:ic:twotone-access-time-filled" color="white" />
+<span>{{ runtime }} minutes</span>
+</div>
+
+<div class="flex items-center gap-2">
+
+</div>
+
 </div>
 
 </div>
