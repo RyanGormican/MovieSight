@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from "vue-router"
 import {  ref } from "vue";
+import { Icon } from "@iconify/vue""
 import getImage from '../lib/getImage"
 const router = useRouter()
 const movieId = router.currentRoute.value.params.id
@@ -31,6 +32,18 @@ class="w-[400px] mx-auto rounded-lg"
 :src="getImage(poster)""
 />
 <div>
+<h1 class="text-4xl font-semibold mb-4">{{ title }}</h1>
+<p class="text-sm text-neutral-300 w-2/3">{{ overview }}</p>
+<div class="flex flex-col text-sm gap-2 mt-3">
+<div class="flex items-center gap-2">
+<Icon icon="uiw:date" />
+<span>{{ release_date }} </span>
+</div>
+<div class="flex items-center gap-2">
+<Icon icon="ic:round-star" />
+<span>{{ vote }} </span>
+</div>
+</div>
 
 </div>
 </div>
