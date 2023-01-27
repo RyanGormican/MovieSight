@@ -1,12 +1,11 @@
 <script setup>
   import { ref, onBeforeMount, defineAsyncComponent } from "vue"
-  import Navbar from "../components/Navbar.vue"; 
   import MovieList from "../components/MovieList.vue";
   const movies = ref([])
   const bannerMovie = ref(null)
 
   const AsyncBanner = defineAsyncComponent(() => {
-  return import ("../components/Banner.vue")
+  return import("../components/Banner.vue")
   })
   const findMovies = async () => {
   movies.value = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=c46280d39e34b3012975df9f8e6e9e70")

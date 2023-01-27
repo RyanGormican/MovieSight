@@ -36,7 +36,7 @@ const {
 	</p>
 	</div>
 	<div>
-	<h1 class="text-xl font-semibold my-2">{{ tile }} </h1>
+	<h1 class="text-xl font-semibold my-2">{{ title }} </h1>
 	<p class="text-neutral-400 text-sm">{{ description }}</p>
 	</div>
 	</div>
