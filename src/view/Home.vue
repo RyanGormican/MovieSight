@@ -6,7 +6,7 @@
   const bannerMovie = ref(null)
 
   const AsyncBanner = defineAsyncComponent(() => {
-  return "../components/Banner.vue"
+  return import ("../components/Banner.vue")
   })
   const findMovies = async () => {
   movies.value = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=c46280d39e34b3012975df9f8e6e9e70")
