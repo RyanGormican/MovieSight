@@ -1,7 +1,7 @@
 <script setup>
 import { useRouter } from "vue-router"
 import { ref } from "vue";
-import { Icon } from "@iconify/vue"
+import { Icon } from "@iconify/vue";
 import getImage from "../lib/getImage"
 const router = useRouter()
 const movieId = router.currentRoute.value.params.id
