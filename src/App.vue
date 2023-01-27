@@ -1,9 +1,12 @@
 <script setup>
-  import { ref, onMounted } from "vue"
+  import { ref, onMounted, defineAsyncComponent } from "vue"
   import Banner from "./components/Banner.vue"
   const movies = ref([])
   const bannerMovie = ref(null)
   
+  const AsyncBanner = defineAsyncComponent(() => {
+    return Banner
+  })
   const findMovies = async () => {
    movies.value = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=c46280d39e34b3012975df9f8e6e9e70")
   .then(res => res.json())
@@ -21,7 +24,7 @@
  
 </script>
 <template>
-  <Banner
+  <AsyncBanner
     :banner ="bannerMovie"
 />
 </template>
