@@ -4,7 +4,7 @@ import { Icon } from '@iconify/vue';
 const { movie } = defineProps(["movie"])
 const {
 	title,
-	overview,
+	overview: description,
 	backdrop_path: background,
 	poster_path: poster,
 	release_date,
@@ -14,7 +14,14 @@ const {
 </script>
 
 <template>
-<div>
-a
+<div class="w-full h-full grid grid-rows-[4fr_1fr]">
+	<div class="relative group w-full h-full">
+	<img
+	:src="getImage(poster)"
+	/>
+	<div 
+
+	</div>
+	</div>
 </div>
 </template>
