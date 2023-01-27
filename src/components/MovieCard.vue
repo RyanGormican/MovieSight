@@ -1,9 +1,11 @@
 <script setup>
 import getImage from '../lib/getImage';
 import { Icon } from '@iconify/vue';
+import { RouterLink } from 'vue-router';
 const { movie } = defineProps(["movie"])
 const {
 	title,
+	id,
 	overview: description,
 	backdrop_path: background,
 	poster_path: poster,
@@ -14,6 +16,9 @@ const {
 </script>
 
 <template>
+<RouterLink :to="`/movies/${id}`">
+
+</RouterLink
 <div class="w-full h-full grid grid-rows-[4fr_1fr]">
 	<div class="relative group w-full h-full">
 	<img
