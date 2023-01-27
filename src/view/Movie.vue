@@ -1,5 +1,5 @@
 <script setup>
-import { useRouter } from "vue-router"
+import { useRouter } from 'vue-router'
 import { ref } from "vue";
 import { Icon } from "@iconify/vue"
 import getImage from "../lib/getImage"
@@ -20,6 +20,7 @@ runtime,
 original_language: language
 } = movie.value
 const country=movie.value.production_countries[0].iso_3166_1
+
 </script> 
 <template>
 <div class="h-screen w-screen grayscale-0"
