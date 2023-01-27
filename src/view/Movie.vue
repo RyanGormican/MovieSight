@@ -55,7 +55,7 @@ class="w-[400px] mx-auto rounded-lg"
 <div class="flex items-center gap-2">
  <img
  class="w-8" 
- :src="'https://countryflagsapi.com/png/${country.toLowerCase()}'"
+ :src="`https://countryflagsapi.com/png/${country.toLowerCase()}`"
  crossorigin="anonymous"
  />
  <span>{{country }} </span>
