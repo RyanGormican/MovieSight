@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router';
 	<RouterLink to="/" class="flex text-3xl items-center font-bold gap-2">
 	<Icon icon= "mingcute:movie-line" width = "40" />
 	<span> MovieSight</span>
-	</div>
+	</RouterLink>
 	<ul class="flex items-center gap-4 font-semibold">
 	</ul>
 </nav>
