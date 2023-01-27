@@ -4,11 +4,12 @@ const { } = defineProps({"banner"})
 const {
 title,
 overview: description,
-bacdrop_path: background,
+backdrop_path: background,
 release_date,
 vote_average: vote,
 original_language: language
 } = banner
+
 const image = getImage(background)
 </script>
 
@@ -20,7 +21,9 @@ class="w-screen h-screen"
 	backgroundPosition: 'center center'
 }">
 <div class= "text-white p-10 flex flex-col justify-center w-full h-full bg-gradient-to-r from-black to-ransparent""
-<h1> a </h1>
+<h1 class ="text-8xl font-bold"> {{title}} </h1>
+<p class ="mt-2 w-1/2 text-sm text-neutral-400"> {{ description }}</p>
+
 </div>
 </div>
 </template>
