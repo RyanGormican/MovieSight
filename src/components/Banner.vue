@@ -1,5 +1,5 @@
 <script setup>
-const { } = defineProps({"baner"})
+const { } = defineProps({"banner"})
 </script>
 
 <template>
