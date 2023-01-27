@@ -25,7 +25,7 @@ const {
 	<div class ="group-hover:opacity-100 transition-opacity opacity-0 absolute left-[-50%] top-[50%] translate-x-[50%] flex flex-col gap-2 w-full font-semibold text-white">
 		<div class="w-full flex-col items-center justify-center">
 		<button>
-			<p width="60" class="hover:text-emerald-600"> > </p>
+			<p width="60" class="hover:text-emerald-600"> </p>
 		</button>
 		</div>
 	</div>
@@ -36,7 +36,7 @@ const {
 	</p>
 	</div>
 	<div>
-	<h1 class="text-xl font-semibold my-2">{{ tile }} </h1>"
+	<h1 class="text-xl font-semibold my-2">{{ tile }} </h1>
 	<p class="text-neutral-400 text-sm">{{ description }}</p>
 	</div>
 	</div>
