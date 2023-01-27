@@ -4,6 +4,8 @@
 </script>
 <template>
   <Navbar />
+  <Suspsense>
   <RouterView />
+  </Suspsense>
 </template>
 
