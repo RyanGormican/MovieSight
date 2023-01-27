@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted } from "vue"
+  import Banner from "./components/Banner.vue"
   const movies = ref([])
   const bannerMovie = ref(null)
   
@@ -20,7 +21,8 @@
  
 </script>
 <template>
-  <h1> Hello World</h1>
-  {{ bannerMovie }}
+  <Banner
+    :banner ="bannerMovie"
+/>
 </template>
 
