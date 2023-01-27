@@ -1,5 +1,6 @@
 <script setup>
 import getImage from "../lib/getImage"
+import { Icon } from '@iconify/vue';
 const { } = defineProps({"banner"})
 const {
 title,
