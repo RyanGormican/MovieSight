@@ -30,7 +30,7 @@ class="w-screen h-screen"
 <span>View More</span>
 <span> <Icon icon="ic:round-play-arrow" />
 </span>
-</button>
+</RouterLink>
 </div>
 </div>
 </template>
