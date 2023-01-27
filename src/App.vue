@@ -1,6 +1,7 @@
 <script setup>
   import { ref, onMounted, defineAsyncComponent } from "vue"
   import Navbar from "./components/Navbar.vue";
+  import MovieList from "./components/MovieList.vue";
   const movies = ref([])
   const bannerMovie = ref(null)
 
@@ -27,6 +28,9 @@
   <Navbar />
   <AsyncBanner
     :banner ="bannerMovie"
+/>
+  <MovieList
+    :movies="movies"
 />
 </template>
 
