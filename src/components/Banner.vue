@@ -13,7 +13,11 @@ const image = getImage(background)
 </script>
 
 <template>
-<div>
+<div
+class="w-screen h-screen"
+:style="{
+	backgroundImage: 'url'(' + getImage(background)+ ')'
+}">
 
 </div>
 </template>
