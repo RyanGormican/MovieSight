@@ -1,4 +1,5 @@
 <script setup>
+import getImage from "../lib/getImage"
 const { } = defineProps({"banner"})
 const {
 title,
@@ -8,14 +9,11 @@ release_date,
 vote_average: vote,
 original_language: language
 } = banner
-const image = 'https;//image.tmdb.org/t/p/original/$(backround)'
+const image = getImage(background)
 </script>
 
 <template>
 <div>
-<img
-:src="image"
-/>
-<h1>{{title }}</h1>
+
 </div>
 </template>
