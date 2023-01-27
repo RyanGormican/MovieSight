@@ -5,7 +5,7 @@ export const routes = [
 	{ path: "/", component: Home },
 	{ path: "/movies/:id", component: Movie },
 ]
-const router = createRouter({
+export const router = createRouter({
 history: createWebHistory()
 routes
 })

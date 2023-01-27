@@ -17,8 +17,6 @@ const {
 
 <template>
 <RouterLink :to="`/movies/${id}`">
-
-</RouterLink
 <div class="w-full h-full grid grid-rows-[4fr_1fr]">
 	<div class="relative group w-full h-full">
 	<img
@@ -44,4 +42,5 @@ const {
 	</div>
 	</div>
 </div>
+</RouterLink>
 </template>
