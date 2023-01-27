@@ -27,6 +27,12 @@ const {
 		</button>
 		</div>
 	</div>
+	<div class="absolute top-4 right-4 px-2 bg-emerald-700 py-1 rounded-md">
+	<p class="flex items-center gap-1 justify-center">
+		<span>{{ vote }}</span>
+		<Icon icon="material-symbols:star-rounded" color="white" />
+	</p>
+	</div>
 	</div>
 </div>
 </template>
