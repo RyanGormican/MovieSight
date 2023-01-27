@@ -2,7 +2,7 @@
 import getImage from "../lib/getImage"
 import { RouterLink } from 'vue-router';
 import { Icon } from '@iconify/vue';
-const { banner  } = defineProps({"banner"})
+const { banner } = defineProps(["banner"])
 const {
 id,
 title,
