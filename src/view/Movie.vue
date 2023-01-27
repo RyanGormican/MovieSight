@@ -2,7 +2,7 @@
 import { useRouter } from "vue-router"
 import {  ref } from "vue";
 import { Icon } from "@iconify/vue"
-import getImage from '../lib/getImage"
+import getImage from "../lib/getImage"
 const router = useRouter()
 const movieId = router.currentRoute.value.params.id
 const movie=ref(null)
