@@ -6,6 +6,6 @@ export const routes = [
 	{ path: "/movies/:id", component: Movie },
 ]
 export const router = createRouter({
-history: createWebHistory()
+history: createWebHistory(),
 routes
 })
