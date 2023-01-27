@@ -19,8 +19,11 @@ const {
 	<img
 	:src="getImage(poster)"
 	/>
-	<div 
-
+	<div class ="group-hover:opacity-100 transition-opacity opacity-0 absolute left-[-50%] top-[50%] translate-x-[50%] flex flex-col gap-2 w-full font-semibold text-white">
+		
+		<button>
+			<Icon icon="ic:around-play-arrow" width="60" class="hover:text-emerald-600"/>
+		</button>
 	</div>
 	</div>
 </div>
