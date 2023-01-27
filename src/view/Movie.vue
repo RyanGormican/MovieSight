@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from "vue-router"
 import { ref } from "vue";
+import { Icon } from "@iconify/vue"
 import getImage from "../lib/getImage"
 const router = useRouter()
 const movieId = router.currentRoute.value.params.id
@@ -38,17 +39,21 @@ class="w-[400px] mx-auto rounded-lg"
 <p class="text-sm text-neutral-300 w-2/3">{{ overview }}</p>
 <div class="flex flex-col text-sm gap-2 mt-3">
 <div class="flex items-center gap-2">
+ <Icon icon="uiw:date" />
 <span>{{ release_date }} </span>
 </div>
 <div class="flex items-center gap-2">
+ <Icon icon="ic:round-star" />
 <span>{{ vote }} / 10 </span>
 </div>
 
 <div class="flex items-center gap-2">
+    <Icon icon="ion:people" />
 <span>{{ popularity }} </span>
 </div>
 
 <div class="flex items-center gap-2">
+   <Icon icon="ic:twotone-access-time-filled" color="white" />
 <span>{{ runtime }} minutes</span>
 </div>
 
