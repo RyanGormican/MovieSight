@@ -26,13 +26,10 @@
 </script>
 
 <template>
-<div>
-  <Navbar />
   <AsyncBanner
     :banner ="bannerMovie"
 />
   <MovieList
     :movies="movies"
 />
-</div>
 </template>
