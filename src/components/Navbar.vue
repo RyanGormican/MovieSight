@@ -6,7 +6,6 @@ import { RouterLink }from 'vue-router';
 	<RouterLink to="/" class="flex text-3xl items-center font-bold gap-2">
 	<span> MovieSight</span>
 	</RouterLink>
-	</div>
 	<ul class="flex items-center gap-4 font-semibold">
 	</ul>
 </nav>
