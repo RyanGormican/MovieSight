@@ -33,6 +33,10 @@ const {
 		<Icon icon="material-symbols:star-rounded" color="white" />
 	</p>
 	</div>
+	<div>
+	<h1 class="text-xl font-semibold my-2">{{ tile }} </h1>"
+	<p class="text-neutral-400">{{ description }}</p>
+	</div>
 	</div>
 </div>
 </template>
