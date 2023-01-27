@@ -3,5 +3,6 @@ const { } = defineProps({"banner"})
 </script>
 
 <template>
-<h1> Hellow world</h1>
+<p>{{ banner }}</p>
+<h1>{{ banner.title }}</h1>
 </template>
