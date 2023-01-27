@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted, defineAsyncComponent } from "vue"
+  import { ref, onBeforeMount, defineAsyncComponent } from "vue"
   import Navbar from "./components/Navbar.vue";
   import MovieList from "./components/MovieList.vue";
   const movies = ref([])
@@ -18,7 +18,7 @@
   return Math.floor(Math.random() * (max - min) + min)
   }
 
-  onMounted(async() => {
+  onBeforeMount(async() => {
   await findMovies()
   bannerMovie.value = movies.value[findRandom(0, movies.value.length - 1)]
   })
