@@ -12,6 +12,7 @@ const {
 title,
 overview: description,
 backdrop_path: background,
+poster_path: poster,
 release_date,
 vote_average: vote,
 original_language: language
@@ -24,7 +25,15 @@ backgroundImage= 'url(' +getImage(background)+')'
 }"
 >
 <div class="w-full h-full bg-gradient-to-r from-black to-transparent">
+<div class="pt-20 w-full h-full grid grid-cols-2 items-center">
+<img
+class="w-[400px] mx-auto rounded-lg"
+:src="getImage(poster)""
+/>
+<div>
 
+</div>
+</div>
 </div>
 </div>
 
