@@ -11,7 +11,7 @@ const {
 	poster_path: poster,
 	release_date,
 	vote_average: vote,
-	original language: language
+	original_language: language
 } = movie
 </script>
 
