@@ -14,7 +14,7 @@ const image = 'https;//image.tmdb.org/t/p/original/$(backround)'
 <template>
 <div>
 <img
-:src="background"
+:src="image"
 />
 <h1>{{title }}</h1>
 </div>
