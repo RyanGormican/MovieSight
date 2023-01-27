@@ -1,13 +1,18 @@
 <script setup>
   import { ref, onMounted } from "vue"
-  const movies = ref(null)
+  const movies = ref([])
+  const bannerMovie = ref(null)
   const findMovies = async () => {
    movies.value = await fetch("https://api.themoviedb.org/3/movie/550?api_key=c46280d39e34b3012975df9f8e6e9e70")
-  .then(res => res.json{})
+  .then(res => res.json())
   .then(res =>res.results)
+ }
+ const Random = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min)
  }
  onMounted(async() => {
  await findMovies()
+ bannerMovie.value = movies.value[Random(0, movies.value.length-1)]
  })
 </script>
 <template>
