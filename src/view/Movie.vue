@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from "vue-router"
-import { ref } from "vue"
+import { ref } from "vue";
 import { Icon } from "@iconify/vue"
 import getImage from "../lib/getImage"
 const router = useRouter()
@@ -25,7 +25,7 @@ const country=movie.value.production_countries[0].iso_3166_1
 <template>
 <div class="h-screen w-screen grayscale-0"
 :style="{
-backgroundImage= 'url(' +getImage(background)+')'
+backgroundImage: 'url(' +getImage(background)+')'
 }"
 >
 <div class="w-full h-full bg-gradient-to-r from-black to-transparent">
