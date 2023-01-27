@@ -35,4 +35,4 @@
     :movies="movies"
 />
 </div>
-</template
+</template>
