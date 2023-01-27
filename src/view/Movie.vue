@@ -20,8 +20,7 @@ popularity,
 runtime,
 original_language: language
 } = movie.value
-
-
+const country=movie.value.production_countries[0].iso_3166_1
 </script> 
 <template>
 <div class="h-screen w-screen grayscale-0"
@@ -59,7 +58,12 @@ class="w-[400px] mx-auto rounded-lg"
 </div>
 
 <div class="flex items-center gap-2">
-
+ <img
+ class="w-8"
+ :src="'https;//countryflagsapi.com/png/${country.toLowerCase()}'"
+ crossorigin="anonymous"
+ />
+ <span>{{country }} </span>
 </div>
 
 </div>
