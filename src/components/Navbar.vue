@@ -10,5 +10,5 @@ import { RouterLink } from 'vue-router';
 	</RouterLink>
 	<ul class="flex items-center gap-4 font-semibold">
 	</ul>
-</nav>;
+</navqawiogyuaiogwyoawhg>
 </template>
