@@ -45,7 +45,7 @@ backgroundImage: 'url(' +getImage(background)+')'
 							<Icon icon="ion:people" />
 							<span>{{ popularity }} </span>
 						</div>
-						<div class="flex items-center gap-2">
+						<div class="flex items-center gap-2  v-if="budget=== 0 && revenue === 0" style="display: none;">
 							<Icon icon="uil:money-bill" />
 							<span> $ {{ revenue }} </span>
 							<Icon icon="uil:money-bill-slash" />
