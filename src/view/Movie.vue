@@ -24,8 +24,8 @@
 </script>
 <template>
 	<div class="h-screen w-screen grayscale-0" :style="{
-backgroundImage: 'url(' +getImage(background)+')
-	'}">
+backgroundImage: 'url(' +getImage(background)+')'
+	}">
 		<div class="w-full h-full bg-gradient-to-r from-black to-transparent">
 			<div class="pt-20 w-full h-full grid grid-cols-2 items-center">
 				<img class="w-[400px] mx-auto rounded-lg" :src="getImage(poster)" />
@@ -51,7 +51,7 @@ backgroundImage: 'url(' +getImage(background)+')
 						</div>
 						<div class="flex items-center gap-2">
 							<Icon icon="uil:money-bill-slash" />
-							<span>{{ budget }} </span>
+							<span> $ {{ budget }} </span>
 						</div>
 						<div class="flex items-center gap-2">
 							<Icon icon="ic:twotone-access-time-filled" color="white" />
