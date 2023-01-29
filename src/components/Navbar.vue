@@ -10,10 +10,10 @@
 		</RouterLink>
 		<ul class="flex items-center gap-4 font-semibold">
 			<a href="https://www.linkedin.com/in/ryangormican/">
-				<Icon icon="mdi:linkedin" color="#0e76a8" />
+				<Icon icon="mdi:linkedin" color="#0e76a8" width="40" />
 			</a>
 			<a href="https://github.com/RyanGormican/MovieSight">
-				<Icon icon="mdi:github" color="#171515" />
+				<Icon icon="mdi:github" color="#171515" width="40" />
 			</a>
 		</ul>
 	</nav>
