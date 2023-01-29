@@ -45,17 +45,17 @@ backgroundImage: 'url(' +getImage(background)+')'
 							<Icon icon="ion:people" />
 							<span>{{ popularity }} </span>
 						</div>
-						<div class="flex items-center gap-2  v-if="budget!== 0 && revenue !== 0">
+						<div class="flex items-center gap-2  v-if="budget!== 0 && revenue !== 0"">
 							<Icon icon="uil:money-bill" />
 							<span> $ {{ revenue }} </span>
 							<Icon icon="uil:money-bill-slash" />
 							<span> $ {{ budget }} </span>
 						</div>
-							<div class="flex items-center gap-2  v-if="budget=== 0 && revenue === 0">
+							<div class="flex items-center gap-2  v-if="budget=== 0 && revenue === 0"">
 							<Icon icon="uil:money-bill" /> 
-							<span> unavailable </span>
+							<span> not found </span>
 							<Icon icon="uil:money-bill-slash" />
-							<span> unavailable </span>
+							<span> not found </span>
 						</div>
 						<div class="flex items-center gap-2">
 							<Icon icon="ic:twotone-access-time-filled" color="white" />
