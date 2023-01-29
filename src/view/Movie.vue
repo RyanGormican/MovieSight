@@ -51,12 +51,6 @@ backgroundImage: 'url(' +getImage(background)+')'
 							<Icon icon="uil:money-bill-slash" />
 							<span> $ {{ budget }} </span>
 						</div>
-							<div class="flex items-center gap-2" v-if="budget=== 0 && revenue === 0">
-							<Icon icon="uil:money-bill" /> 
-							<span> not found </span>
-							<Icon icon="uil:money-bill-slash" />
-							<span> not found </span>
-						</div>
 						<div class="flex items-center gap-2">
 							<Icon icon="ic:twotone-access-time-filled" color="white" />
 							<span>{{ runtime }} minutes</span>
