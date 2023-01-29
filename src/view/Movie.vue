@@ -48,8 +48,6 @@ backgroundImage: 'url(' +getImage(background)+')'
 						<div class="flex items-center gap-2">
 							<Icon icon="uil:money-bill" />
 							<span> $ {{ revenue }} </span>
-						</div>
-						<div class="flex items-center gap-2">
 							<Icon icon="uil:money-bill-slash" />
 							<span> $ {{ budget }} </span>
 						</div>
